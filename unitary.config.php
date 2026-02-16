@@ -5,5 +5,9 @@
  */
 
 return [
-    'helpController' => "\App\Controllers\HelpController",
+    'type' => "cli",
+    'verbose' => false,
+    'timezone' => 'UTC',
+    'locale' => 'en_US',
+    'helpController' => "\App\Controllers\HelpController"
 ];
