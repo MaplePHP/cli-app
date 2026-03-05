@@ -4,17 +4,9 @@
  *
  * @var RouterDispatcher $router
  */
+
+use App\Controllers\StartController;
 use MaplePHP\Core\Router\RouterDispatcher;
 
-
-//$router->cli("/run", [TestController::class, "index"]);
-
-
-$router->group(function($router) {
-
-    $router->get("/", [\App\Controllers\StartController::class, "index"]);
-}, []);
-
-
-//$router->get("/run", [TestController::class, "index"]);
-//$router->get("[/help]", [HelpController::class, "index"]);
+$router->get("/", [StartController::class, "index"]);
+$router->get("/show", [StartController::class, "show"]);

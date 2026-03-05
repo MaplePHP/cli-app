@@ -24,7 +24,6 @@ class ConfigProps extends AbstractConfigProps
     public ?string $type = null;
     public ?int $exitCode = null;
     public ?bool $verbose = null;
-    public ?string $helpController = null;
 
     /**
      * Hydrate the properties/object with expected data, and handle unexpected data
@@ -38,17 +37,17 @@ class ConfigProps extends AbstractConfigProps
         switch ($key) {
             case 'type':
                 $this->type = (!is_string($value) || $value === '') ? null : $value;
-                break;
-            case 'helpController':
-                $this->helpController = (!is_string($value) || $value === '') ? null : $value;
+				$this->setPropDesc($key, "Lorem ipsum dolor type.");
                 break;
             case 'timezone':
                 // The default timezone is 'CET'
                 $this->timezone = (!is_string($value) || $value === '') ? 'Europe/Stockholm' : $value;
+	            $this->setPropDesc($key, "Lorem ipsum dolor timezone.");
                 break;
             case 'locale':
                 // The default timezone is 'CET'
                 $this->locale = (!is_string($value) || $value === '') ? 'en_US' : $value;
+	            $this->setPropDesc($key, "Lorem ipsum dolor locale.");
                 if(!$this->isValidLocale($this->locale)) {
                     throw new InvalidArgumentException(
                         "Invalid locale '{$this->locale}'. Expected format like 'en_US' (language_COUNTRY)."
@@ -57,9 +56,11 @@ class ConfigProps extends AbstractConfigProps
                 break;
             case 'exitCode':
                 $this->exitCode = ($value === null) ? null : (int)$value;
+	            $this->setPropDesc($key, "Lorem ipsum dolor exitCode.");
                 break;
             case 'verbose':
                 $this->verbose = $this->dataToBool($value);
+	            $this->setPropDesc($key, "Lorem ipsum dolor verbose.");
                 break;
         }
     }

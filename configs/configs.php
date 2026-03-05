@@ -5,11 +5,8 @@
  */
 
 return [
-    'title' => getenv('APP_TITLE'),
+    'app_title' => getenv('APP_TITLE'),
     'env' => getenv('APP_ENV'),
-    'type' => "cli",
-    'verbose' => false,
     'timezone' => 'UTC',
-    'locale' => 'en_US',
-    'helpController' => "\App\Controllers\HelpController"
+    'locale' => 'en_US'
 ];
