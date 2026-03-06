@@ -9,4 +9,4 @@ use App\Controllers\StartController;
 use MaplePHP\Core\Router\RouterDispatcher;
 
 $router->get("/", [StartController::class, "index"]);
-$router->get("/show", [StartController::class, "show"]);
+$router->get("/{page:.+}", [StartController::class, "show"]);

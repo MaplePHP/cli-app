@@ -1,9 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Controllers\Cli;
 
-use MaplePHP\Core\Routing\DefaultShellController;
 use Psr\Http\Message\ResponseInterface;
+use MaplePHP\Core\Routing\DefaultShellController;
 
 class TestController extends DefaultShellController
 {

@@ -8,8 +8,8 @@ return [
 	"middleware" => [
 		"global" => [
 			HttpStatusError::class,
-			//ContentLengthMiddleware::class,
-			//GzipMiddleware::class,
+			ContentLengthMiddleware::class,
+			GzipMiddleware::class,
 		]
 	]
 ];

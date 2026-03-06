@@ -43,7 +43,10 @@
       "type": "path",
       "url": "/Users/danielronkainen/Dev/libraries/Emitron",
       "options": {
-        "symlink": true
+        "symlink": true,
+        "versions": {
+          "maplephp/emitron": "1.1.x-dev"
+        }
       }
     },
     {
@@ -67,5 +70,6 @@
       "Configs\\": "configs/"
     }
   },
-  "minimum-stability": "dev"
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
