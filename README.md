@@ -15,22 +15,11 @@ composer create-project maplephp/maplephp my-app
 cd my-app
 ````
 
-Run the CLI:
+Run the MaplePHP development server:
 
 ```bash
-./cli
+./maple serve
 ```
-
-## Usage
-
-Typical commands:
-
-```bash
-./cli list
-./cli run --arg=1
-./cli help
-```
-
 
 ## Project Structure
 
