@@ -1,13 +1,13 @@
 {
-  "name": "maplephp/cli-app",
+  "name": "maplephp/framework",
   "type": "project",
-  "description": "Starter project for building CLI applications with MaplePHP, including routing, controllers, dependency injection, and command tooling ready for extension and customization.",
+  "description": "MaplePHP is a high performance PHP framework built on PSR standards and modern best practices.",
   "keywords": [
-    "cli",
     "framework",
     "psr",
     "php",
-    "mvc"
+    "mvc",
+    "di"
   ],
   "homepage": "https://wazabii.se/",
   "license": "Apache-2.0",
