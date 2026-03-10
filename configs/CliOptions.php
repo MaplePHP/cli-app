@@ -17,7 +17,7 @@ use MaplePHP\Emitron\AbstractConfigProps;
  * - Null values allow the system to distinguish between "not provided" and "intentionally set".
  * - Do not use array values or multiple data types
  */
-class ConfigProps extends AbstractConfigProps
+class CliOptions extends AbstractConfigProps
 {
     public ?string $timezone = null;
     public ?string $locale = null;
