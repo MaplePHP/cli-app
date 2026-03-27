@@ -6,6 +6,10 @@
  *
  * FastRoute parameter patterns:
  *
+ * your-slug           Add slug as string "/". (Example: /your-slug)
+ *
+ * {name:your_slug}    Bind your slug to router "/". (Example: /{name:your-slug})
+ *
  * {name}              Matches any segment except "/". (Example: /user/{name})
  *
  * {id:\d+}            Matches numeric values only. (Example: /post/{id})
@@ -21,4 +25,4 @@ use App\Controllers\HelloWorldController;
 use MaplePHP\Core\Router\RouterDispatcher;
 
 $router->get("/", [HelloWorldController::class, "index"]);
-$router->get("/{page}", [HelloWorldController::class, "show"]);
+$router->get("/show", [HelloWorldController::class, "show"]);
